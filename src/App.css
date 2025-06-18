@@ -14,16 +14,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #282c34;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px 0;
 }
 
+.App-header p {
+  margin-top: 0;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +38,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-content {
+  padding: 0 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid blue; /* Thicker blue border for headers */
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+td {
+  border: 1px dashed red; /* Dashed red border for data cells */
+  padding: 8px;
+}
+
+form {
+  text-align: initial;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  text-align: initial;
+}
+
+.group-control {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
 }

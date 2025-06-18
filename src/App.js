@@ -1,27 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome';
+import Counter from './Counter';
+import Product from './Product';
+import BookCard from './BookCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-header">        
+        <Welcome />
+        <Counter />
       </header>
-      <div className="App-content">
-        <h1>Chào mừng bạn đến với React!</h1>
-        <p>Học React thật thú vị!</p>
-      </div>
+      <div className="App-content">        
+        <Product name="Áo thun React" price="350000" />
+        <BookCard title="Dế Mèn Phiêu Lưu Ký" author="Tô Hoài" year="1941" />
+      </div>      
     </div>
   );
 }
